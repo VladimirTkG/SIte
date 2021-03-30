@@ -1,0 +1,251 @@
+			body{
+					font-family: "Times New Roman", Times, serif;
+					background-image: url("../pictures/Div.jpg");
+					background-repeat: repeat-y;
+					margin: 0;
+					display: flex; flex-direction: column;
+					height: -webkit-fill-available;
+			}
+
+/* задаем цвет фона для контейнера nav. */
+			nav {
+			    margin: 0 0;
+			    background-color: #daa520;
+			}
+
+			/* убираем отступы и поля, а также list-style для "ul",
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			}
+
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin: 0px -7px 0 3px;
+			    display:inline-block;
+			    background-color: #daa520;
+			 }
+
+			/* стилизуем ссылки */
+				nav a {
+					   display:block;
+					   padding:0 15px;
+					   color:#FFF;
+					   font-size:20px;
+					   line-height: 60px;
+					   text-decoration:none;
+				  }
+
+			/* изменяем цвет фона при наведении курсора */
+				  nav a:hover {
+						  background-color: #000000;
+					}
+		/* скрываем выпадающие списки по умолчанию
+					 * и задаем абсолютное позиционирование */
+					nav ul ul {
+					    display: none;
+					    position: absolute;
+					    top: 100%;
+					}
+
+					/* отображаем выпадающий список при наведении */
+					nav ul li:hover > ul {
+					    display:inherit;
+					}
+
+					/* первый уровень выпадающего списка */
+					nav ul ul li {
+					    min-width:170px;
+					    float:none;
+					    display:list-item;
+					    position: relative;
+					}
+					nav ul ul ul {
+							position: absolute;
+							top:0;
+							left:100%;
+					}
+
+					label{
+						color:black;
+					}
+
+					button{
+						position: absolute;
+						right: 70px;
+						top: 10px;
+					}
+
+
+					.header{
+						position: relative;
+						background-color: #000000;
+						flex: 0 0 auto;
+					}
+
+					.header p{
+						text-align: center;
+						color: #FFF;
+					}
+
+					.header_img{
+						color: #FFF;
+						display: block;
+						margin: auto;
+					}
+
+					.login{
+						margin-top: 10px;
+
+					}
+
+					.logo{
+						position: absolute;
+						padding: 0 0;
+						max-height: 40px;
+						align-items: flex-start;
+					}
+
+					.Main{
+						flex: 1 0 auto;
+					}
+
+					.Main h1{
+						text-align: center;
+						margin: auto 10%;
+						max-width: 80%;
+					}
+
+					.Main p{
+						text-align: justify;
+						text-indent: 25px;
+						margin: 10px 15%;
+						max-width: 70%;
+					}
+
+					.plusminus{
+						text-decoration: none;
+						font-family: fantasy;
+						font-size: 15px;
+						padding: 1px 6px;
+						margin-left: 3px;
+						margin-right: 3px;
+						border-radius: 30px;
+						background-color: #cc5e1f;
+						color: black;
+
+					}
+					.plusminus:hover{
+						background-color: #555
+
+					}
+
+					.footer{
+						margin:  0;
+						flex: 0 0 auto;
+						max-width: 100%;
+						background-color: #cc9293
+					}
+
+					.footer p {
+						text-align: center;
+						font-size: 50px;
+					}
+
+					.formar{
+						background-color: #425d94;
+						border: solid;
+						margin: 2% 30%;
+					}
+
+
+					.buttonAdm{
+					border: 1px solid black;
+					background-color: #f573736f;
+	        color: white;
+	        padding: 14px 25px;
+	        text-align: center;
+	        text-decoration: none;
+	        display: inline-block;
+					}
+
+					.buttonAdm:hover{
+						background:#333333;
+						}
+
+
+					.superbutton {
+
+						min-width:150px;
+						max-width: 300px;
+						height:40px;
+						border-radius:20px;
+						background:#459DE5;
+						color:#fff;
+						font-size:18px;
+						cursor:pointer;
+						}
+
+						.superbutton:hover{
+							background:#358DE5;
+							}
+
+							.superbutton:focus{
+								outline:none;
+								}
+
+
+
+					.form{
+						margin-top: 20%;
+						margin-left:35%;
+						min-height: 200px;
+					}
+
+					.choice{
+						display:block;
+						padding:0 0;
+						color:#FFF;
+						font-size:20px;
+						line-height: 60px;
+						text-decoration:none;
+					}
+					.choice:hover{
+						background-color: #000000;
+					}
+
+					.border_inf{
+						margin:  0 38%;
+
+					}
+
+
+					.borderTovar{
+						border: solid;
+						margin:5px 150px;
+						padding-top: 15px;
+					}
+
+					.borderTovar h2{
+						align-self: center;
+					}
+
+					.form_search{
+
+						margin-left: 45%;
+					}
+
+					.emptykorz{
+						margin-top: 55px;
+						margin-bottom: 80px;
+						font-size: 35;
+						color: #51f0b6;
+						text-align: center;
+					}
+
+					.zakSelect{
+					display: none;
+					}
